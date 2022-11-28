@@ -50,7 +50,7 @@ export default function CardStats({
       setLoading(true)
 
       // console.log('Starting FETCH')
-      const response = await axios.get('http://localhost:3000/api/alertemater')
+      const response = await axios.get('https://storks.vercel.app/api/alertemater')
 
       // console.log('Data : ', datas)
       console.log(response.data);

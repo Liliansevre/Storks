@@ -42,7 +42,7 @@ const CardBarChart = () => {
       setLoading(true)
 
       // console.log('Starting FETCH')
-      const response = await axios.get('http://localhost:3000/api/naissancelait')
+      const response = await axios.get('https://storks.vercel.app/api/naissancelait')
       const datas = response.data
 
       // console.log('Data : ', datas)

@@ -3,9 +3,9 @@ import axios from 'axios'
 export default async (req, res) => {
     const alertes = [] ; 
     try {
-        const tauxnat = await axios.get('http://localhost:3000/api/tauxNat')
-        const popannuelle = await axios.get('http://localhost:3000/api/populationAnnuelle')
-        const naissanceannuelles = await axios.get('http://localhost:3000/api/nbnaissances')
+        const tauxnat = await axios.get('https://storks.vercel.app/api/tauxNat')
+        const popannuelle = await axios.get('https://storks.vercel.app/api/populationAnnuelle')
+        const naissanceannuelles = await axios.get('https://storks.vercel.app/api/nbnaissances')
         console.log(tauxnat.data['Augmentation'])
         
         if (tauxnat.data['Augmentation'] > 2){

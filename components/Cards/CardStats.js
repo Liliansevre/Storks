@@ -60,7 +60,7 @@ export default function CardStats({
 
       // console.log('Starting FETCH')
       // console.log(requete)
-      const response = await axios.get(`http://localhost:3000/api/${requete}`)
+      const response = await axios.get(`https://storks.vercel.app/api/${requete}`)
       setLoading(false)
 
       // console.log('Data : ', response.data)

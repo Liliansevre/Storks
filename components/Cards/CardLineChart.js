@@ -53,14 +53,14 @@ const CardLineChart = () => {
       setLoading(true)
 
       // console.log('Starting FETCH')
-      const response = await axios.get('http://localhost:3000/api/nbnaissances')
+      const response = await axios.get('https://storks.vercel.app/api/nbnaissances')
       const datas = response.data
 
       // console.log('Data : ', datas)
       if (datas) setData(datas)
       // console.log(datas)
 
-      const predi = await axios.get('http://localhost:3000/api/prediction/predinaissance/')
+      const predi = await axios.get('https://storks.vercel.app/api/prediction/predinaissance/')
       const dataprediction = predi.data
 
       if (dataprediction) {
