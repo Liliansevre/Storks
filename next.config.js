@@ -6,10 +6,14 @@ module.exports = {
           destination: '/auth/login',
           permanent: true,
         },
+      ]
+    },
+    async rewrites() {
+      return [
         {
           source: '/api/:path*',
           destination: 'https://api.example.com/:path*',
-        }
+        },
       ]
     },
   }
